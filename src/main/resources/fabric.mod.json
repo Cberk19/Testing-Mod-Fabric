@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "testing_jawn",
+	"version": "${version}",
+	"name": "test",
+	"description": "Farting puke butt asshole",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/test/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"test.modid.TestingMod"
+		],
+		"client": [
+			"test.modid.TestingModClient"
+		],
+		"fabric-datagen": [
+			"test.modid.TestingDataGenerator"
+		]
+	},
+	"mixins": [
+		"test.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.10",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
